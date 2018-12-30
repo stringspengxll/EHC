@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>交易市场</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta name="keywords" content="EHC,交易市场" />
+    <link rel="stylesheet" href="css/layui.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <script src="script/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <link href="script/dropload/dropload.css" rel="stylesheet" />
+    <script src="script/dropload/dropload.min.js?v=7"></script>
+    <script src="script/user.js?v=1323"></script>
+    <script src="script/noworder.js?v=22"></script>
+    <script src="script/echarts/echarts.common.min.js"></script>
+    <script src="script/echarts/EHCEcharts.js?v=909"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+   
+    <div class="container">
+
+        <header class="header">
+            <div class="top_bar cf">
+                <div class="top_l">
+                    <a href="javascript:void(0)" onclick="window.history.back()" style="display: none"><i class="back"></i>返回</a>
+                </div>
+                <div class="top_c">
+                    <h1>交易市场</h1>
+                </div>
+                <div class="top_r tr">
+                    <a class="trlink" href=""></a>
+                </div>
+            </div>
+        </header>
+        <div class="main cf">
+            <div class="trade_tab no_shadow">
+                <a href="buyOrder.html">买单</a>
+                <a href="sellOrder.html">卖单</a>
+                <a href="nowOrder.html" class="current">订单</a>
+                <a href="historyOrder.html" style="display:none;">历史</a>
+            </div>
+        
+            <div class="trade_box">
+                <div id="echarts" style="width:100%;height:260px;"></div>
+                <div class="order_tab">
+                    <a href="javascript:void(0);" class="current">市场买入</a>
+                    <a href="javascript:void(0);">市场卖出</a>
+                    <a href="javascript:void(0);">挂单买入</a>
+                    <a href="javascript:void(0);">挂单卖出</a>
+                </div>
+                <div class="order_list" id="divSCBuy">
+
+                </div>
+                <div class="order_list" id="divSCSell" style="display:none;">
+
+                </div>
+                <div class="order_list" id="divGDBuy" style="display:none;">
+
+                </div>
+                <div class="order_list" id="divGDSell" style="display:none;">
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <nav class="nav_bar">
+                <a class="nav_item" href="index.html"><i class="nav_icon1"></i><span class="nav_label">首页</span></a>
+                <a class="nav_item" href="minelist.html"><i class="nav_icon2"></i><span class="nav_label">矿机商城</span></a>
+                <a class="nav_item current" href="buyOrder.html"><i class="nav_icon3"></i><span class="nav_label">交易</span></a>
+                <a class="nav_item" href="javascript:alert('尚未开放，敬请期待');"><i class="nav_icon5"></i><span class="nav_label">商城应用</span></a>
+                <a class="nav_item" href="user/me.html"><i class="nav_icon4"></i><span class="nav_label">我的</span></a>
+            </nav>
+        </footer>
+        <div class="mask_box" style="display:none;" id="divBigImg">
+            <div class="mask_content">
+                <img src="" alt="" class="big_pic">
+                <i class="mask_x"></i>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>交易市场</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="keywords" content="HTC,交易市场" />
+<link rel="stylesheet" href="css/layui.css" type="text/css" />
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+<script src="script/jquery-1.8.0.min.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div class="container">
+	<header class="header">
+		<div class="top_bar cf">
+			<div class="top_l">
+				<a href="javascript:void(0)" onclick="window.history.back()" style="display: none"><i class="back"></i>返回</a>
+			</div>
+			<div class="top_c">
+				<h1>交易市场</h1>
+			</div>
+			<div class="top_r tr">
+				<a class="trlink" href=""></a>
+			</div>
+		</div>
+	</header>
+	<div class="main cf">
+		<div class="trade_tab no_shadow">
+			<a href="buyOrder.html">买单</a>
+			<a href="sellOrder.html">卖单</a>
+			<a href="nowOrder.html">订单</a>
+			<a href="historyOrder.html" class="current">历史</a>
+		</div>
+		
+		<div class="trade_box">
+			
+			<div class="order_tab">
+				<a href="#">市场买入</a>
+				<a href="#" class="current">市场卖出</a>
+				<a href="#">挂单买入</a>
+				<a href="#">挂单卖出</a>
+			</div>
+			<div class="order_list">
+				
+				<div class="order_txtcon">
+					<ul class="list">
+						<li>订单编号：HTC201812032038AC</li>
+						<li><span class="mr">卖出数量：2</span><span class="mr">单价：￥5.5</span><span class="mr">总价：$1.54 = ￥11</span></li>
+						<li>卖出时间：2018-12-3 20:38</li>
+						<li>买方姓名：李小龙</li>
+						<li>买方手机号：159****9590</li>
+						<li>买方支付宝账号：159****9590</li>
+						<li>订单状态：<span class="red">交易失败</span></li>
+					</ul>
+					<div class="order_btn">
+						<button type="button" class="f12 btn_tr_gray">查看支付截图</button>
+					</div>
+				</div>
+				<div class="order_txtcon">
+					<ul class="list">
+						<li>订单编号：HTC201812032038AC2</li>
+						<li><span class="mr">卖出数量：2</span><span class="mr">单价：￥5.5</span><span class="mr">总价：$1.54 = ￥11</span></li>
+						<li>卖出时间：2018-12-3 20:38</li>
+						<li>买方姓名：李小龙</li>
+						<li>买方手机号：159****9590</li>
+						<li>买方支付宝账号：159****9590</li>
+						<li>订单状态：<span class="">交易成功</span></li>
+					</ul>
+					<div class="order_btn">
+						<button type="button" class="f12 btn_tr_gray">查看支付截图</button>
+					</div>
+				</div>
+				
+				
+			</div>
+		
+		</div>
+	</div>
+	<footer>
+		<nav class="nav_bar">
+			<a class="nav_item" href="index.html"><i class="nav_icon1"></i><span class="nav_label">首页</span></a>
+			<a class="nav_item" href="minelist.html"><i class="nav_icon2"></i><span class="nav_label">矿机商城</span></a>
+			<a class="nav_item current" href="buyOrder.html"><i class="nav_icon3"></i><span class="nav_label">交易</span></a>
+			<a class="nav_item" href="user/me.html"><i class="nav_icon4"></i><span class="nav_label">我的</span></a>
+		</nav>
+	</footer>
+	<div class="mask_box">
+		<div class="mask_content">
+			<img src="images/order/order_pic1.png" alt="" class="big_pic">
+			<i class="mask_x"></i>
+		</div>
+	</div>
+</div>
+	<script type="text/javascript">		
+	$(document).ready(function() {
+		$(".mask_x").click(function(){
+			$(".mask_box").hide();
+		});
+	})
+	</script>
+</body>
+</html>

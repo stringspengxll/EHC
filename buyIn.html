@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>交易市场</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta name="keywords" content="EHC,交易市场" />
+    <link rel="stylesheet" href="css/layui.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <script src="script/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script src="script/user.js"></script>
+    <script src="script/buyIn.js?v=14"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div class="container">
+	<header class="header">
+		<div class="top_bar cf">
+			<div class="top_l">
+				<a href="javascript:void(0)" onclick="window.history.back()"><i class="back"></i>返回</a>
+			</div>
+			<div class="top_c">
+				<h1>买入</h1>
+			</div>
+			<div class="top_r tr">
+				<a class="trlink" href=""></a>
+			</div>
+		</div>
+	</header>
+	<div class="main main1 cf">
+		<div class="line"></div>
+		<div class="input_list">
+            <ul class="list cf">
+                <li class="input_box">
+                    <span class="txt">可买数量</span>
+                    <input type="number" class="r-txt" placeholder="" value="" id="txtTotalNum" readonly="readonly" />
+                </li>
+                <li class="input_box">
+                    <span class="txt">单价</span>
+                    <input type="number" class="r-txt" placeholder="" value="" id="txtUnitPrice" readonly="readonly" />
+                </li>
+                <li class="input_box">
+                    <span class="txt">购买数量</span>
+                    <input type="number" class="r-txt" placeholder="" value="" id="txtNum"  />
+                </li>
+                <li class="input_box">
+                    <span class="txt">支付密码</span>
+                    <input type="password" class="r-txt" placeholder="" value="" id="txtPayPwd" />
+                </li>
+            </ul>
+			<div class="btn">
+				<button href="javascript:void(0)" type="button" class="btn_lr_red" id="btnSubmit">确认买入</button>
+			</div>
+		</div>
+		
+		
+	</div>
+</div>
+</body>
+</html>

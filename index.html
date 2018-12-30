@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>EHC 互通币</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta name="keywords" content="EHC,互通币" />
+    <link rel="stylesheet" href="css/layui.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <script src="script/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script src="script/user.js?v=1"></script>
+    <script src="script/index.js?v=323"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div class="container">
+	<header class="header">
+		<div class="top_bar cf">
+			<div class="top_l">
+				<a href="javascript:void(0)" onclick="window.history.back()" style="display: none"><i class="back"></i>返回</a>
+			</div>
+			<div class="top_c">
+                <h1>EHC 互通币</h1>
+			</div>
+			<div class="top_r tr">
+				<a class="trlink" title="邀请好友" href="user/invite.html"><i class="invite"></i></a>
+			</div>
+		</div>
+	</header>
+	<div class="main cf">
+		<div class="kj_world">
+			<div data-v-universe="" class="kj_box">
+				<img data-v-universe="" src="images/bg_earth.png" alt="" class="img_center" />
+                <img data-v-universe="" src="images/bg_universe.png" alt="" class="img_rotate" id="imgBanner"/>
+			</div>
+			<div class="top_tab">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tab">
+					<tr>
+						<th>运行矿机</th>
+						<th>当前算力</th>
+						<th>预计收益</th>
+						<th rowspan="2"><a class="btn_round" href="user/mymine.html">我的矿机&gt;</a></th>
+					</tr>
+					<tr>
+						<td><strong id="spMineNum">0</strong>台</td>
+						<td><strong id="spHashrate">0</strong>G</td>
+                        <td><strong id="spMoney">0</strong>EHC</td>
+					</tr>
+				</table>
+			</div>
+			<p class="kj_btn"><button class="btn_home">开采中<!--暂无矿机开采--></button></p>
+		</div>
+		
+        <div class="hq_bar cf">
+            <div class="title_bar">
+                <h2><i class="tit_dot"></i>今日行情</h2>
+                <a href="marketList.html"><i class="forward"></i></a>
+            </div>
+            <div class="hq_tab">
+                <table width="100%" style="height:329px;" border="0" cellpadding="0" cellspacing="0" class="tab" id="tbMarketData">
+                    <tr id="trHead">
+                        <td>币种名称</td>
+                        <td width="42">币名</td>
+                        <td>价格</td>
+                        <td>涨跌</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+		
+	</div>
+	<footer>
+        <nav class="nav_bar">
+            <a class="nav_item current" href="index.html"><i class="nav_icon1"></i><span class="nav_label">首页</span></a>
+            <a class="nav_item" href="minelist.html"><i class="nav_icon2"></i><span class="nav_label">矿机商城</span></a>
+            <a class="nav_item" href="buyOrder.html"><i class="nav_icon3"></i><span class="nav_label">交易</span></a>
+            <a class="nav_item" href="javascript:alert('尚未开放，敬请期待');"><i class="nav_icon5"></i><span class="nav_label">商城应用</span></a>
+            <a class="nav_item" href="user/me.html"><i class="nav_icon4"></i><span class="nav_label">我的</span></a>
+        </nav>
+	</footer>
+</div>
+</body>
+</html>
